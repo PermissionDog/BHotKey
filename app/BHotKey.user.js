@@ -63,7 +63,7 @@
     };
 
     function switchDanmaku() {
-        document.querySelector("#bilibiliPlayer > div.bilibili-player-area.video-state-pause.video-control-show > div.bilibili-player-video-bottom-area > div > div.bilibili-player-video-danmaku-root > div.bilibili-player-video-danmaku-switch.bui.bui-switch > input").click();
+        document.querySelector("div.bilibili-player-video-danmaku-switch.bui.bui-switch > input").click();
     }
 
     const SPEED_NODE = () => document.querySelector("#bilibiliPlayer > div.bilibili-player-area.video-state-pause.video-control-show > div.bilibili-player-video-wrap > div.bilibili-player-video-control-wrap > div.bilibili-player-video-control > div.bilibili-player-video-control-bottom > div.bilibili-player-video-control-bottom-right > div.bilibili-player-video-btn.bilibili-player-video-btn-speed > div > ul");
