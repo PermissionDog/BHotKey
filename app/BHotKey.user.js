@@ -28,6 +28,7 @@
     const 加速播放 = 'NumpadAdd';
     const 减速播放 = 'NumpadSubtract';
     const 网页全屏 = 'Backquote';       //`
+    const 播放暂停 = 'KeyP';
 
     //配置结束
 
@@ -54,6 +55,9 @@
                 break;
             case 网页全屏:
                 switchWebFullScreen();
+                break;
+            case 播放暂停:
+                playOrPause();
                 break;
         }
     };
@@ -97,5 +101,13 @@
 
     function switchWebFullScreen() {
         document.querySelector("#bilibiliPlayer > div.bilibili-player-area.video-state-pause.video-control-show > div.bilibili-player-video-wrap > div.bilibili-player-video-control-wrap > div.bilibili-player-video-control > div.bilibili-player-video-control-bottom > div.bilibili-player-video-control-bottom-right > div.bilibili-player-video-btn.bilibili-player-video-web-fullscreen > button.bilibili-player-iconfont.bilibili-player-iconfont-web-fullscreen-off.player-tooltips-trigger").click();
+    }
+
+    function playOrPause() {
+        if (unsafeWindow.player.getState() == "PAUSED") {
+            unsafeWindow.player.play();
+        } else {
+            unsafeWindow.player.pause();
+        }
     }
 })();
