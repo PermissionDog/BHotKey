@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BHotKey
 // @namespace    https://github.com/PermissionDog/BHotKey
-// @version      0.1
+// @version      0.2
 // @description  添加B站播放器快捷键
 // @author       PermissionDog
 // @match        *://www.bilibili.com/bangumi/play/ep*
